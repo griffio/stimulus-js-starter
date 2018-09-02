@@ -1,6 +1,6 @@
 # Stimulus Starter with Nodejs Express
 
-* Overview
+## Overview
 
 see https://stimulusjs.org/handbook/hello-stimulus
 
@@ -8,9 +8,7 @@ Basic example to "Post" a greeting form to NodeJs and return response into page 
 
 With added NodeJs and Express with [multer](https://www.npmjs.com/package/multer) package to support FormData content type encoding.
 
-![greeting.gif](https://github.com/griffio/stimulus-js-starter/blob/master/greet.gif)
-
-** Setup
+## Setup
 
 ```
 $ cd stimulus-starter
@@ -19,3 +17,6 @@ $ yarn start
 ```
 
 Browse to http://localhost:9000
+
+![greeting.gif](https://github.com/griffio/stimulus-js-starter/blob/master/greet.gif)
+
