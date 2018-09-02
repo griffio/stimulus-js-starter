@@ -11,6 +11,7 @@
     <form data-controller="greet" action="/greet" method="post" enctype="multipart/form-data"
           data-action="greet#greeting" autocomplete="off">
         <label><input type="text" name="greeting">Enter Greeting</label>
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>"/>
         <button>Send</button>
         <output data-target="greet.result"></output>
     </form>
