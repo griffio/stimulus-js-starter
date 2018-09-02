@@ -11,7 +11,7 @@ With added NodeJs and Express with [multer](https://www.npmjs.com/package/multer
 ## Setup
 
 ```
-$ cd stimulus-starter
+$ cd stimulus-js-starter
 $ yarn install
 $ yarn start
 ```
