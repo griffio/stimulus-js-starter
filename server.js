@@ -9,7 +9,10 @@ const port = process.env.PORT || 9000;
 const app = express();
 const router = express.Router();
 const upload = multer();
+const helmet = require("helmet");
+const ejs = require("ejs");
 
+app.use(helmet()); // basic web security headers
 app.use(express.static(publicPath));
 app.use(webpackMiddleware(webpack(webpackConfig)));
 
@@ -18,10 +21,10 @@ app.listen(port, () => {
 });
 
 router.post("/greet", upload.none(), (req, res) => {
-    if (!req.body) return res.sendStatus(400);
-    const greeting = req.body['greeting'];
-    console.log(greeting);
-    res.send(`And ${greeting} to you!`);
+  if (!req.body) return res.sendStatus(400);
+  const greeting = req.body["greeting"];
+  result = ejs.render("And <%= greeting %> to you!", {greeting: greeting});
+  res.send(result);
 });
 
 app.use('/', router);
