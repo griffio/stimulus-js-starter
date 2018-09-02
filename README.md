@@ -8,7 +8,7 @@ Basic example to "Post" a greeting form to NodeJs and return response into page 
 
 With added NodeJs and Express with [multer](https://www.npmjs.com/package/multer) package to support FormData content type encoding.
 
-![greeting.gif](https://raw.githubusercontent.com/griffio/stimulus-js-starter/master/greeting.gif)
+![greeting.gif](https://github.com/griffio/stimulus-js-starter/blob/master/greet.gif)
 
 ** Setup
 
